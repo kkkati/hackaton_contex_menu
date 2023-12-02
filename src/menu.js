@@ -1,5 +1,5 @@
 import { Menu } from "./core/menu";
-import { positionMenu } from "./utils";
+import { positionMenu, closeContextWhenResizeWindow } from "./utils";
 
 export class ContextMenu extends Menu {
   constructor(selector) {
@@ -10,6 +10,8 @@ export class ContextMenu extends Menu {
       event.preventDefault();
       this.el.classList.add("open");
       positionMenu(this.el, event);
+      closeContextWhenResizeWindow(this);
+
       const menuItem = document.createElement("li"); //проверка работы кода
       menuItem.className = "menu-item"; //проверка работы кода
       menuItem.textContent = `Мой список`; //проверка работы кода

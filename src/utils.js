@@ -25,3 +25,9 @@ export function positionMenu(menu, event) {
     menu.style.top = `${clickCoordsY}px`;
   }
 }
+
+export function closeContextWhenResizeWindow(elem) {
+  window.addEventListener("resize", () => {
+    elem.close();
+  });
+}
