@@ -43,3 +43,13 @@ body {
 .menu .menu-item:hover {
   background: #ffe4e1;
 }
+
+.timer-text {
+  width: 200px;
+  padding: 8px 10px;
+  border: 1px solid #123c69;
+  border-radius: 5px;
+  background: #edc7b7;
+  font-family: "Comfortaa";
+  color: #123c69;
+}

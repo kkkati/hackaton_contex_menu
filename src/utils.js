@@ -41,17 +41,16 @@ export function getRandomColor() {
   return color;
 }
 
-export function startTimer(number, content, container) {  
-        
+export function startTimer(number, content, container) {
   setInterval(() => {
-      if (number >= 0) {
-          content.textContent = number;
-          number -= 1;            
-      } else {
-          content.textContent = 'Отсчет завершен!';
-          setTimeout(() => {                
-              container.remove();
-          }, 3000);          
-      }
+    if (number >= 0) {
+      content.textContent = number;
+      number -= 1;
+    } else {
+      content.textContent = "Отсчет завершен!";
+      setTimeout(() => {
+        container.remove();
+      }, 3000);
+    }
   }, 1000);
 }

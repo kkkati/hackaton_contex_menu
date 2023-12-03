@@ -11,13 +11,6 @@ export class ContextMenu extends Menu {
       this.el.classList.add("open");
       positionMenu(this.el, event);
       closeContextWhenResizeWindow(this);
-
-      // const menuItem = document.createElement("li"); //проверка работы кода
-      // menuItem.className = "menu-item"; //проверка работы кода
-      // menuItem.textContent = `Мой список`; //проверка работы кода
-      // this.el.append(menuItem); //проверка работы кода
-      // console.log(this.el); //проверка работы кода
-      // console.log("Все работает"); //проверка работы кода
     });
   }
   close() {
