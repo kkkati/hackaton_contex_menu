@@ -20,7 +20,7 @@ export function positionMenu(menu, event) {
   }
 
   if (windowHeight - clickCoordsY < menuHeight) {
-    menu.style.top = `${windowHeight - menuHeight - 35}px`;
+    menu.style.top = `${windowHeight - menuHeight}px`;
   } else {
     menu.style.top = `${clickCoordsY}px`;
   }

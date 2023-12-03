@@ -16,7 +16,7 @@ export class ContextMenu extends Menu {
       // menuItem.className = "menu-item"; //проверка работы кода
       // menuItem.textContent = `Мой список`; //проверка работы кода
       // this.el.append(menuItem); //проверка работы кода
-      console.log(this.el); //проверка работы кода
+      // console.log(this.el); //проверка работы кода
       // console.log("Все работает"); //проверка работы кода
     });
   }
@@ -24,6 +24,6 @@ export class ContextMenu extends Menu {
     this.el.classList.remove("open");
   }
   add(module) {
-    this.el.append(module.toHTML()); //проверить после написания модулей
+    this.el.insertAdjacentHTML("beforeend", module.toHTML());
   }
 }
